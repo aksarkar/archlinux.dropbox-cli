@@ -5,8 +5,8 @@
 # Contributor: carstene1ns <arch carsten-teibes de>
 
 pkgname=dropbox-cli
-pkgver=2020.03.04
-pkgrel=7
+pkgver=2022.12.05
+pkgrel=1
 pkgdesc="Command line interface for Dropbox"
 arch=("any")
 url="http://www.${pkgname%-cli}.com"
@@ -14,12 +14,12 @@ license=("GPL")
 depends=("${pkgname%-cli}" "python-gobject")
 install="${pkgname}.install"
 source=(
-  "${pkgname}-${pkgver}.py::https://www.${pkgname%-cli}.com/download?dl=packages/${pkgname%-cli}.py"
+  "${pkgname}-${pkgver}.py::https://linux.${pkgname%-cli}.com/packages/${pkgname%-cli}.py"
   "${pkgname%-cli}d-fallback.patch"
 )
 sha256sums=(
-  "7889ce1d872bce85b3e94b929abacd6086e7f378644519fd8ebd8acf0316e59f"
-  "fb862b534730f0765b4317ca5d0816f42d5a4be0018004c5b18fde63524fdb14"
+  "80170c4ab287e24dc131d32c237c2f44f811e33a393c32c32deae21875ad7894"
+  "9ae702ebf0699ac56fbf99c577ddaf22701dfd1c9e40d6ec5ac56475c2636f48"
 )
 
 prepare() {
